@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comunics 3ºDes</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Comunicação Interna</h1>
+
+        <div id="register-screen" class="screen active">
+            <h2>Cadastre-se</h2>
+            <form id="register-form">
+                <input type="text" id="reg-username" placeholder="Usuário" required>
+                <input type="password" id="reg-password" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p>Já tem uma conta? <a href="#" id="show-login">Faça Login</a></p>
+        </div>
+
+        <div id="login-screen" class="screen">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="log-username" placeholder="Usuário" required>
+                <input type="password" id="log-password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem uma conta? <a href="#" id="show-register">Cadastre-se</a></p>
+        </div>
+
+        <div id="message-screen" class="screen">
+            <h2>Bem-vindo(a), <span id="current-user"></span>!</h2>
+            <div class="message-board">
+                <h3>Mural de Mensagens</h3>
+                <div id="messages">
+                    </div>
+                <form id="message-form">
+                    <input type="text" id="message-input" placeholder="Digite sua mensagem..." required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <button id="logout-button">Sair</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
